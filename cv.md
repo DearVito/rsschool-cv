@@ -37,7 +37,7 @@ print(*fib_num_arr)
 **Moscow Aviation Institute (National Research University)** \
 Degree level: Specialist \
 Specialization: Testing launch vehicles \
-Average score: 4.52
+Average score: 4.53
 
 ### Courses: 
 * [Automation Testing with Selenium and Python (Stepik)](https://stepik.org/cert/1019529) 
