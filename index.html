@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+        body {
+            background-color: white;
+        }
+
+        ul {
+            padding-inline-start: 1em;
+        }
+
+        pre {
+            text-align: left;
+            background-color: #edebf0;
+            font-family: monospace;
+            padding: 10px 10px;
+            font-size: 13px;
+        }
+
+        #git-logo,
+        #year,
+        #rs-logo {
+            width: 7em;
+            display: block;
+            padding: 0 1.75em;
+            text-align: center;
+        }
+
+        .page {
+            display: flex;
+            text-align: left;
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            border: 3px solid black;
+            color: #093145;
+            font-family: "Gill Sans", sans-serif;
+            box-shadow: 10px 10px 20px 0px grey;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            margin: 0 auto;
+            padding: 2% 2%;
+        }
+
+        main section,
+        header,
+        #info {
+            display: block;
+            margin: 0 auto;
+            padding: 0 0.5em;
+        }
+
+        #avatar {
+            width: 16em;
+            padding: 0px 0px;
+            border-bottom: 3px solid black;
+        }
+
+        footer {
+            display: flex;
+            background-color: #D5F2A2;
+            padding: 5% 0 0 0;
+            height: 4.5em;
+
+        }
+
+        header {
+            background-color: #D5F2A2;
+        }
+
+        aside {
+            display: block;
+            margin: 0 auto;
+            background-color: #093145;
+            color: white;
+            border-right: 3px solid black;
+        }
+
+        aside>section {
+            padding: 1em 1em;
+        }
+
+        aside a {
+            color: yellow;
+        }
+
+        main a {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <aside>
+            <img id="avatar" src="https://avatars.githubusercontent.com/u/81476115?v=4" alt="My Avatar">
+            <section>
+                <h3>Contact information:</h3>
+                <p>
+                    Phone: +7 910 746 65 13 <br>
+                    E-mail: decent.future@yahoo.com <br>
+                    Telegram: @DearVito <br>
+                    <a href="https://www.linkedin.com/in/vito-kravchenko/">LinkedIn</a>
+                </p>
+            </section>
+            <section>
+                <h3>Skills and Proficiency:</h3>
+                <ul>
+                    <li>Python Basics</li>
+                    <li>Selenium Basics</li>
+                    <li>SQL Basics</li>
+                    <li>HTML5, CSS3</li>
+                    <li>JavaScript Basics </li>
+                    <li>Git, GitHub </li>
+                    <li>VS Code</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Languages:</h3>
+                <ul>
+                    <li>Russian - Native </li>
+                    <li>English - Intermediate </li>
+                    <li>Kazakh - Intermediate</li>
+                </ul>
+            </section>
+
+        </aside>
+        <main>
+            <header>
+                <h1>Vitaliy Kravchenko</h1>
+                <h2>Junior Frontend Developer</h2>
+            </header>
+            <div id="info">
+                <section>
+                    <h3>About me:</h3>
+                    <p>
+                        I want to become Junior Frontend Developer in a large company and work with promising projects.
+                        I always
+                        aim to learn new things and able to quickly master information.
+
+                    </p>
+                </section>
+                <section>
+                    <h3>Code example:</h3>
+                    <i>Fibonacci sequence</i> <br>
+                    <pre>
+        number = int(input()) 
+        fib_num_arr = [] 
+        for i in range(1,number+1): 
+            if i==1 or i==2: 
+                fib_num_arr.append(1) 
+            else: 
+                fib = fib_num_arr[-1] + fib_num_arr[-2] 
+                fib_num_arr.append(fib) 
+        print(*fib_num_arr)
+                    </pre>
+                </section>
+                <section>
+                    <h3>Higher Education:</h3>
+                    <b>Moscow Aviation Institute (National Research University)</b> <br>
+                    Degree level: Specialist <br>
+                    Specialization: Testing launch vehicles <br>
+                    Average score: 4.53
+                </section>
+                <section>
+                    <h3>Courses:</h3>
+                    <ul>
+                        <li><a href="https://stepik.org/cert/1019529">Automation Testing with Selenium and Python
+                                (Stepik)</a>
+                        </li>
+                        <li><a href="https://stepik.org/cert/971829">Statistic Basics (Stepik)</a></li>
+                        <li><a href="https://www.udemy.com/certificate/UC-de1e4bfc-c0e0-41db-aef2-d64ebd2ae126/">Software
+                                Testing for beginners. Web, Mobile, API. (QA/QC)
+                                (Udemy)</a></li>
+                        <li><a href="https://stepik.org/cert/874610">Programming on Python (Stepik)</a></li>
+                    </ul>
+                </section>
+
+            </div>
+            <footer>
+                <div><a href="https://github.com/DearVito">
+                        <img id="git-logo" src="https://pngimg.com/uploads/github/github_PNG15.png" alt="">
+                    </a>
+                </div>
+                <div style="border:rgb(152, 240, 140);">
+                    <h3 id="year">2021</h3>
+                </div>
+                <div><a href="https://rs.school/js/">
+                        <img id="rs-logo" src="https://rs.school/images/rs_school_js.svg" alt="RS school logo">
+                    </a>
+                </div>
+
+            </footer>
+        </main>
+    </div>
+
+</body>
+
+</html>
