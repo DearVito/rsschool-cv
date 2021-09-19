@@ -6,101 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
-    <style>
-        body {
-            background-color: white;
-        }
-
-        ul {
-            padding-inline-start: 1em;
-        }
-
-        pre {
-            text-align: left;
-            background-color: #edebf0;
-            font-family: monospace;
-            padding: 10px 10px;
-            font-size: 13px;
-        }
-
-        #git-logo,
-        #year,
-        #rs-logo {
-            width: 7em;
-            display: block;
-            padding: 0 1.75em;
-            text-align: center;
-        }
-
-        .page {
-            display: flex;
-            text-align: left;
-            max-width: 800px;
-            margin: 50px auto;
-            background-color: white;
-            border: 3px solid black;
-            color: #093145;
-            font-family: "Gill Sans", sans-serif;
-            box-shadow: 10px 10px 20px 0px grey;
-        }
-
-        h3 {
-            text-align: center;
-        }
-
-        h1,
-        h2 {
-            text-align: center;
-            margin: 0 auto;
-            padding: 2% 2%;
-        }
-
-        main section,
-        header,
-        #info {
-            display: block;
-            margin: 0 auto;
-            padding: 0 0.5em;
-        }
-
-        #avatar {
-            width: 16em;
-            padding: 0px 0px;
-            border-bottom: 3px solid black;
-        }
-
-        footer {
-            display: flex;
-            background-color: #D5F2A2;
-            padding: 5% 0 0 0;
-            height: 4.5em;
-
-        }
-
-        header {
-            background-color: #D5F2A2;
-        }
-
-        aside {
-            display: block;
-            margin: 0 auto;
-            background-color: #093145;
-            color: white;
-            border-right: 3px solid black;
-        }
-
-        aside>section {
-            padding: 1em 1em;
-        }
-
-        aside a {
-            color: yellow;
-        }
-
-        main a {
-            color: blue;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -108,16 +18,16 @@
         <aside>
             <img id="avatar" src="https://avatars.githubusercontent.com/u/81476115?v=4" alt="My Avatar">
             <section>
-                <h3>Contact information:</h3>
-                <p>
-                    Phone: +7 910 746 65 13 <br>
-                    E-mail: decent.future@yahoo.com <br>
-                    Telegram: @DearVito <br>
-                    <a href="https://www.linkedin.com/in/vito-kravchenko/">LinkedIn</a>
-                </p>
+                <h5>Contact information:</h5>
+                <ul>
+                    <li>Phone: +7 910 746 65 13</li>
+                    <li>E-mail: decent.future@yahoo.com</li>
+                    <li>Telegram: @DearVito</li>
+                    <li><a href="https://www.linkedin.com/in/vito-kravchenko/">LinkedIn</a></li>
+                </ul>
             </section>
             <section>
-                <h3>Skills and Proficiency:</h3>
+                <h5>Skills and Proficiency:</h5>
                 <ul>
                     <li>Python Basics</li>
                     <li>Selenium Basics</li>
@@ -129,10 +39,10 @@
                 </ul>
             </section>
             <section>
-                <h3>Languages:</h3>
+                <h5>Languages:</h5>
                 <ul>
                     <li>Russian - Native </li>
-                    <li>English - Intermediate </li>
+                    <li>English - Intermediate</li>
                     <li>Kazakh - Intermediate</li>
                 </ul>
             </section>
@@ -155,8 +65,9 @@
                 </section>
                 <section>
                     <h3>Code example:</h3>
-                    <i>Fibonacci sequence</i> <br>
+                    <h4><i>Fibonacci sequence</i></h4> <br>
                     <pre>
+                    <code class="python">
         number = int(input()) 
         fib_num_arr = [] 
         for i in range(1,number+1): 
@@ -166,6 +77,7 @@
                 fib = fib_num_arr[-1] + fib_num_arr[-2] 
                 fib_num_arr.append(fib) 
         print(*fib_num_arr)
+                    </code>
                     </pre>
                 </section>
                 <section>
